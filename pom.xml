@@ -35,6 +35,7 @@
 		<poi.version>3.17</poi.version>
 		<oshi.version>3.9.1</oshi.version>
 		<velocity.version>1.7</velocity.version>
+		<activiti.version>5.22.0</activiti.version>
 	</properties>
 
 	<dependencies>
@@ -93,7 +94,7 @@
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
-			<scope>runtime</scope>
+			<version>8.0.13</version>
 		</dependency>
 
 		<!-- SpringBoot集成mybatis框架 -->
@@ -242,6 +243,31 @@
 					<artifactId>c3p0</artifactId>
 				</exclusion>
 			</exclusions>
+		</dependency>
+
+		<!-- activiti -->
+		<dependency>
+			<groupId>org.activiti</groupId>
+			<artifactId>activiti-engine</artifactId>
+			<version>${activiti.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.activiti</groupId>
+			<artifactId>activiti-spring</artifactId>
+			<version>${activiti.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.activiti</groupId>
+			<artifactId>activiti-modeler</artifactId>
+			<version>${activiti.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.activiti</groupId>
+			<artifactId>activiti-diagram-rest</artifactId>
+			<version>${activiti.version}</version>
 		</dependency>
 
 	</dependencies>
